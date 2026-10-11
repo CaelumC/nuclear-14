@@ -12349,3 +12349,10 @@ Entries:
   id: 6512
   time: '2026-10-10T23:56:29.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2052
+- author: Vixting
+  changes:
+    - type: Fix
+      message: 'fix stacks of items not being counted for bounties '
+  id: 6513
+  time: '2026-10-11T22:05:02.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2058
