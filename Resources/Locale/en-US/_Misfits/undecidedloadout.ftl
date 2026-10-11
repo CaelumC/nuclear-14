@@ -581,7 +581,7 @@ undecided-loadout-category-misfits-enclave-command-plasma-description =
 undecided-loadout-category-misfits-enclave-rifleman-name = Trooper Rifleman Kit
 undecided-loadout-category-misfits-enclave-rifleman-description =
     Includes Peacekeeper armor, a military belt,
-    a Wattz 3000 laser rifle with 2 MF cells,
+    a Wattz 2000 laser rifle with 2 MF cells,
     an AEP-7 Laser Pistol with 2 energy cells,
     a handheld radio, 1 smoke grenade, 1 stimpak,
     and 1 gauze pack.
