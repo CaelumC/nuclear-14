@@ -92,6 +92,9 @@ public sealed partial class VehicleComponent : Component
     /// </summary>
     [ViewVariables]
     public EntityUid? ActiveOverlay;
+
+    [ViewVariables]
+    public int? OriginalDrawDepth;
 }
 
 [Serializable, NetSerializable]

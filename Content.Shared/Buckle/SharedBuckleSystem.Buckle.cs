@@ -17,6 +17,8 @@ using Content.Shared.Standing;
 using Content.Shared.Storage.Components;
 using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
+using Content.Shared._Misfits.Buckle;
+using Content.Shared.Vehicles;
 using Content.Shared._Misfits.Buckle.Events;
 using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
@@ -169,7 +171,7 @@ public abstract partial class SharedBuckleSystem
         // #Misfits Fix — skip position-drift check for mountable straps.
         // The mount system manages rider positioning with direction-dependent
         // offsets that intentionally deviate from BuckleOffset.
-        if (HasComp<MountableComponent>(strapUid))
+        if (HasComp<MountableComponent>(strapUid) || HasComp<DirectionalBuckleOffsetComponent>(strapUid))
             return;
 
         var delta = (xform.LocalPosition - strapComp.BuckleOffset).LengthSquared();
@@ -196,6 +198,11 @@ public abstract partial class SharedBuckleSystem
     private void OnBucklePreventCollide(EntityUid uid, BuckleComponent component, ref PreventCollideEvent args)
     {
         if (args.OtherEntity == component.BuckledTo && component.DontCollide)
+            args.Cancelled = true;
+
+        // Misfits
+        if (args.OurFixture.Hard && args.OtherFixture.Hard && component.BuckledTo is { } strap
+            && (HasComp<MountableComponent>(strap) || HasComp<VehicleComponent>(strap)))
             args.Cancelled = true;
     }
 
@@ -446,7 +453,13 @@ public abstract partial class SharedBuckleSystem
         RaiseLocalEvent(buckle, ref gotEv);
 
         if (TryComp<PhysicsComponent>(buckle, out var physics))
+        {
             _physics.ResetDynamics(buckle, physics);
+
+            // Misfits make collision based on the mount not the player
+            if (HasComp<MountableComponent>(strap) || HasComp<VehicleComponent>(strap))
+                _physics.RegenerateContacts((buckle.Owner, physics));
+        }
 
         DebugTools.AssertEqual(xform.ParentUid, strap.Owner);
     }
