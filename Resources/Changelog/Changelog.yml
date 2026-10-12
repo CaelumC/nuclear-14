@@ -12356,3 +12356,10 @@ Entries:
   id: 6513
   time: '2026-10-11T22:05:02.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2058
+- author: cythisiax
+  changes:
+    - type: Add
+      message: Admin Loremaster Tab event shit. Local audio & Global audio play.
+  id: 6514
+  time: '2026-10-12T00:28:03.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2075
