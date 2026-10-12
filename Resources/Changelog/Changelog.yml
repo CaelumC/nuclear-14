@@ -12396,3 +12396,16 @@ Entries:
   id: 6517
   time: '2026-10-12T18:20:50.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2024
+- author: alekszejg
+  changes:
+    - type: Add
+      message: Added Kokoa plant and seeds. Chocolate!!!
+    - type: Add
+      message: Added Kokoa seed spawns and trading
+    - type: Add
+      message: Added Kokoa pod trading contract
+    - type: Fix
+      message: Fixed chocolate-related recipes
+  id: 6518
+  time: '2026-10-12T20:13:03.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2060
