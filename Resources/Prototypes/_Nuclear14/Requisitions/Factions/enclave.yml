@@ -347,7 +347,7 @@
         crate: N14CrateRequisitionsEnclaveTools
       - cost: 400
         crate: N14CrateRequisitionsEnclaveMining
-      - cost: 3500
+      - cost: 3800
         crate: N14CrateRequisitionsEnclaveIngots
     - name: n14-requisitions-category-provisions
       entries:
