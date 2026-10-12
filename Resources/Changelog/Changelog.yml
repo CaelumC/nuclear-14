@@ -12387,3 +12387,12 @@ Entries:
   id: 6516
   time: '2026-10-12T17:56:16.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2073
+- author: cythisiax
+  changes:
+    - type: Tweak
+      message: 'revert NCR loadout removal because "ncr is half baked RMC cancer now" '
+    - type: Tweak
+      message: Disable vendors because they're halfbaked RMC cancer
+  id: 6517
+  time: '2026-10-12T18:20:50.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2024
