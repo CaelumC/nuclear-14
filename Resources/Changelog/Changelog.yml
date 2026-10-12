@@ -12363,3 +12363,14 @@ Entries:
   id: 6514
   time: '2026-10-12T00:28:03.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2075
+- author: RedBookcase
+  changes:
+    - type: Add
+      message: >-
+        New laser sprites for the Wattz & Recharger line of weapons. The Wattz
+        now fires fat yellow lasers, while Rechargers fire narrow orange lasers.
+    - type: Fix
+      message: Wattz-related typo in the Enclave Enlisted kits.
+  id: 6515
+  time: '2026-10-12T00:28:14.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2074
