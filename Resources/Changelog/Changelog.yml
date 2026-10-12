@@ -12374,3 +12374,16 @@ Entries:
   id: 6515
   time: '2026-10-12T00:28:14.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2074
+- author: Vixting
+  changes:
+    - type: Add
+      message: >-
+        Added mount overlays (handlebars for bikes) & hiding parts of the
+        players sprite to make it look better
+    - type: Add
+      message: Positioned players sprite better for mounts
+    - type: Fix
+      message: Fix misc issues with mounts, should feel much smoother
+  id: 6516
+  time: '2026-10-12T17:56:16.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2073
