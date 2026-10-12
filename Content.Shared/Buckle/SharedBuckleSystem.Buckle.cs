@@ -200,7 +200,7 @@ public abstract partial class SharedBuckleSystem
         if (args.OtherEntity == component.BuckledTo && component.DontCollide)
             args.Cancelled = true;
 
-        // Misfits
+        // Misfits Riders are pinned at an offset on mounts, so only mounts body should block, non hard contacts still hit rider.
         if (args.OurFixture.Hard && args.OtherFixture.Hard && component.BuckledTo is { } strap
             && (HasComp<MountableComponent>(strap) || HasComp<VehicleComponent>(strap)))
             args.Cancelled = true;
@@ -453,13 +453,7 @@ public abstract partial class SharedBuckleSystem
         RaiseLocalEvent(buckle, ref gotEv);
 
         if (TryComp<PhysicsComponent>(buckle, out var physics))
-        {
             _physics.ResetDynamics(buckle, physics);
-
-            // Misfits make collision based on the mount not the player
-            if (HasComp<MountableComponent>(strap) || HasComp<VehicleComponent>(strap))
-                _physics.RegenerateContacts((buckle.Owner, physics));
-        }
 
         DebugTools.AssertEqual(xform.ParentUid, strap.Owner);
     }

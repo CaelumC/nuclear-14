@@ -93,6 +93,9 @@ public sealed partial class VehicleComponent : Component
     [ViewVariables]
     public EntityUid? ActiveOverlay;
 
+    /// <summary>
+    /// Misfits Sprites draw depth before a rider raised it, restored on dismount
+    /// </summary>
     [ViewVariables]
     public int? OriginalDrawDepth;
 }

@@ -68,6 +68,7 @@ public sealed class VehicleSystem : SharedVehicleSystem
         if (!TryComp<SpriteComponent>(ent, out var spriteComp))
             return;
 
+        // Misfits DrawOver always exists, so check its value. restore the original depth when nobody is riding.
         if (!_appearance.TryGetData(ent, VehicleState.DrawOver, out bool drawOver) || !drawOver)
         {
             if (ent.Comp.OriginalDrawDepth is { } originalDepth)

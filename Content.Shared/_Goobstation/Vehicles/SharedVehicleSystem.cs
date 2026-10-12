@@ -220,6 +220,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         if (ent.Comp.OverlayPrototype == null)
             return;
 
+        // Misfits server spawns the overlay & networks it a predicted client spawn would leave duplicate that never gets deleted (cuz its not networked)
         if (_net.IsClient)
             return;
 
