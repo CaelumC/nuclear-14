@@ -20,10 +20,9 @@
     attackRate: 0.85
     damage:
       types:
-        Slash: 40
+        Slash: 45
         Piercing: 15
         Structural: 40
-        Shock: 10
     soundHit:
       path: /Audio/_Nuclear14/Weapons/Melee/Swing/ripper.ogg
   - type: Item
