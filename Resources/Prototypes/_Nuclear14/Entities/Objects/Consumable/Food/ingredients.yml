@@ -613,6 +613,35 @@
     - Trash
 
 - type: entity
+  name: cocoa beans
+  parent: FoodProduceBase
+  id: N14FoodCocoaBeans
+  description: You can never have too much chocolate!
+  components:
+    - type: FlavorProfile
+      flavors:
+        - chocolate
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/cocoa.rsi
+      state: produce-beans
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 14
+          reagents:
+            - ReagentId: Nutriment
+              Quantity: 2
+            - ReagentId: Vitamin
+              Quantity: 1
+            - ReagentId: CocoaPowder
+              Quantity: 2
+    - type: Extractable
+      juiceSolution:
+        reagents:
+          - ReagentId: CocoaPowder
+            Quantity: 2
+        
+- type: entity
   parent: N14BaseFoodCondimentPacket
   id: N14FoodCondimentPacketProtein
   name: protein powder packet
