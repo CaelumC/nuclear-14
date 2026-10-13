@@ -12409,3 +12409,32 @@ Entries:
   id: 6518
   time: '2026-10-12T20:13:03.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2060
+- author: RedBookcase
+  changes:
+    - type: Add
+      message: >-
+        Gauss Rifle ASRS crate purchase for Enclave. There's only a single
+        one...
+    - type: Tweak
+      message: Lowered Gauss Rifle ROF from 2.0 to 1.2
+    - type: Remove
+      message: Removed BoS Recruitment Popup.
+    - type: Remove
+      message: >-
+        Remove Enclave Gauss Pistol BP and ASRS order, and removed it from
+        random expedition loot as well.
+    - type: Tweak
+      message: 'Renamed Poleaxe to Bardiche :nerd_face: '
+    - type: Tweak
+      message: Removed second Knight Lancer slot.
+    - type: Tweak
+      message: >-
+        Lots of changes to wield delays. Wield delay removed on 5.56 LMGs. Wield
+        delay and movespeed slow lowered for M240b following it's ROF nerf. 
+    - type: Tweak
+      message: >-
+        Increased price of Enclave materials crate to prevent infinite money
+        exploit
+  id: 6519
+  time: '2026-10-13T03:27:54.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2076
