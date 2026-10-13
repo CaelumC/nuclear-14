@@ -12445,3 +12445,10 @@ Entries:
   id: 6520
   time: '2026-10-13T23:15:27.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2080
+- author: cythisiax
+  changes:
+    - type: Tweak
+      message: Re-enable due to overwhelming support
+  id: 6521
+  time: '2026-10-13T23:55:24.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2082
