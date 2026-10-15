@@ -838,6 +838,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - NCRVeteranRanger
+        - NCRFieldRanger
     - !type:CharacterDepartmentTimeRequirement
       department: Rangers
       min: 72000 # 1200 minutes
@@ -853,6 +854,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - NCRVeteranRanger
+        - NCRFieldRanger
     - !type:CharacterDepartmentTimeRequirement
       department: Rangers
       min: 72000 # 1200 minutes
@@ -959,7 +961,6 @@
     - !type:CharacterJobRequirement
       jobs:
         - NCRVeteranRanger
-        - NCRFieldRanger # Purely cosmetic, identical to field ranger mask
     - !type:CharacterDepartmentTimeRequirement
       department: Rangers
       min: 72000 # 1200 minutes
